@@ -1,0 +1,165 @@
+.profile-page {
+  padding: 60px 0;
+  min-height: calc(100vh - 200px);
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.profile-sidebar {
+  height: fit-content;
+  padding: 30px;
+  text-align: center;
+}
+
+.user-avatar {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.user-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.user-info p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+}
+
+.sidebar-actions {
+  margin-top: 25px;
+}
+
+.orders-section {
+  padding: 30px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border);
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: var(--text);
+}
+
+.orders-count {
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.order-item:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-id {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.detail-value {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.rejection-message {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 51, 51, 0.2);
+  border: 2px solid var(--danger);
+  border-radius: 8px;
+  color: var(--danger);
+  text-align: center;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+.empty-state p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 968px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    order: 2;
+  }
+
+  .profile-main {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

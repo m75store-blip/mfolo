@@ -1,0 +1,33 @@
+{
+  "name": "instagram-followers-store",
+  "version": "1.0.0",
+  "description": "متجر إلكتروني لبيع متابعين انستغرام",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["instagram", "followers", "ecommerce"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.7",
+    "express-validator": "^7.0.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.2"
+  }
+}
