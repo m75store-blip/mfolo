@@ -40,4 +40,4 @@ git push -u origin main
 
 Write-Host ""
 Write-Host "✅ تم النشر بنجاح! 🎉" -ForegroundColor Green
-Write-Host "📍 رابط المشروع: https://github.com/m75store-blip/mfolo" -ForegroundColor Cyan
+Write-Host "Repository: https://github.com/m75store-blip/mfolo" -ForegroundColor Cyan
